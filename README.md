@@ -1,6 +1,6 @@
 **WARNING: This action deletes data. Use with care and at your own risk.**
 
-![testrun](https://github.com/christian-korneck/delete-run-artifacts-action/workflows/testrun/badge.svg)
+![testrun]()
 
 # delete-run-artifacts
 
@@ -36,7 +36,7 @@ jobs:
     steps:
     - name: Delete artifacts
       if: github.event.action == 'delete_all_artifacts'
-      uses: christian-korneck/delete-run-artifacts-action@v1
+      uses: drilonibrahimi/delete-run-artifacts-action@v2.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -67,7 +67,7 @@ on: [push]
 
 Please note: Due to a github [limitation](https://github.community/t5/GitHub-Actions/repository-dispatch-not-triggering-actions/m-p/33845#M1677), the file `.github/workflows/webhook_target.yml` needs to be always present in your `master` or default branch. The action will work with any branch however.   
    
-(Check [this repo](https://github.com/christian-korneck/captive) or the `.github/workflow` dir for a working example)
+
 
 # Reference
 
