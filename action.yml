@@ -1,4 +1,4 @@
-name: 'delete-run-artifacts'
+name: 'delete-run-artifacts-v2'
 description: 'github action to delete all artifacts at the end of a workflow run'
 inputs:
   parent_repo:
